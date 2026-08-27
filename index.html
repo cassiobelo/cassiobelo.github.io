@@ -73,6 +73,36 @@
 
         /* HERO */
 
+.hero-profile {
+    flex-shrink: 0;
+    width: 220px;
+    text-align: center;
+}
+
+.hero-profile-info {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hero-profile-info strong {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+.hero-profile-info span {
+    font-size: 13px;
+    color: #b9c3cd;
+}
+
+.hero-profile-info small {
+    margin-top: 6px;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #7f8a96;
+}
+        
 .hero {
     min-height: 650px;
     display: flex;
@@ -94,8 +124,8 @@
 }
 
 .hero-photo {
-    width: 220px;
-    height: 220px;
+    width: 190px;
+    height: 190px;
     object-fit: cover;
     border-radius: 50%;
     border: 1px solid #3a4652;
@@ -235,41 +265,28 @@
 
 .optibf-gallery {
     margin: 55px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: start;
 }
 
 .optibf-gallery figure {
     margin: 0;
 }
 
+.optibf-secondary-images {
+    display: contents;
+}
+
 .optibf-gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
     display: block;
     border-radius: 8px;
     border: 1px solid #29323c;
     background: #0b0f14;
-}
-
-.optibf-main-image {
-    margin-bottom: 35px !important;
-}
-
-.optibf-main-image img {
-    width: 300px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.optibf-secondary-images {
-    max-width: 900px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-}
-
-.optibf-secondary-images img {
-    width: 100%;
-    height: 350px;
-    object-fit: contain;
 }
 
 .optibf-gallery figcaption {
@@ -289,12 +306,11 @@
 
 @media (max-width: 800px) {
 
-    .optibf-secondary-images {
+    .optibf-gallery {
         grid-template-columns: 1fr;
-        max-width: 600px;
     }
 
-    .optibf-secondary-images img {
+    .optibf-gallery img {
         height: auto;
     }
 
@@ -303,6 +319,10 @@
         text-align: center;
     }
 
+    .hero-profile {
+    width: 100%;
+}
+    
     .hero-content {
         max-width: 850px;
     }
@@ -671,7 +691,7 @@
                 </a>
 
                 <a class="button"
-                   href="https://www.linkedin.com/in/cassiod esouza/"
+                   href="https://www.linkedin.com/in/cassiodesouza/"
                    target="_blank">
                     LinkedIn
                 </a>
@@ -686,11 +706,33 @@
 
         </div>
 
-        <img
-            src="images/profile/cassio-profile.png"
-            alt="Cassio Souza"
-            class="hero-photo"
-        >
+        <div class="hero-profile">
+
+            <img
+                src="images/profile/cassio-profile.png"
+                alt="Cassio Souza"
+                class="hero-photo"
+            >
+
+            <div class="hero-profile-info">
+
+                <strong>CASSIO SOUZA</strong>
+
+                <span>
+                    Mechanical & Vehicle Engineer
+                </span>
+
+                <span>
+                    São Paulo, Brazil
+                </span>
+
+                <small>
+                    Commercial Vehicles · CAE · Brake Systems
+                </small>
+
+            </div>
+
+        </div>
 
     </div>
 
