@@ -211,6 +211,59 @@
             color: #b8c2cc;
         }
 
+/* =========================
+   OPTIBF GALLERY
+========================= */
+
+.optibf-gallery {
+    margin: 55px 0;
+}
+
+.optibf-gallery figure {
+    margin: 0;
+}
+
+.optibf-gallery img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid #29323c;
+    background: #0b0f14;
+}
+
+.optibf-gallery figcaption {
+    margin-top: 10px;
+    color: #8b96a5;
+    font-size: 13px;
+}
+
+.optibf-main-image {
+    margin-bottom: 24px !important;
+}
+
+.optibf-secondary-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.optibf-gallery img {
+    transition: 0.25s;
+}
+
+.optibf-gallery img:hover {
+    transform: translateY(-3px);
+    border-color: #566575;
+}
+
+@media (max-width: 800px) {
+
+    .optibf-secondary-images {
+        grid-template-columns: 1fr;
+    }
+
+}
+        
         /* ABOUT */
 
         .about-grid {
@@ -613,7 +666,7 @@
         </div>
 
         <a
-            href="https://github.com/cassiobelo"
+            href="https://github.com/cassiobelo/OptiBF"
             target="_blank"
             rel="noopener noreferrer"
             class="sae-button"
@@ -645,6 +698,45 @@
 
     </div>
 
+    <!-- VISUAL OVERVIEW -->
+
+<div class="optibf-gallery">
+
+    <figure class="optibf-main-image">
+        <img
+            src="images/optibf/brake_geometry.png"
+            alt="OptiBF brake geometry and dashboard"
+        >
+        <figcaption>
+            Interactive brake geometry and optimization interface
+        </figcaption>
+    </figure>
+
+    <div class="optibf-secondary-images">
+
+        <figure>
+            <img
+                src="images/optibf/brake_equations.png"
+                alt="S-Cam brake equations"
+            >
+            <figcaption>
+                Analytical brake model
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img
+                src="images/optibf/brake_self_energizing.png"
+                alt="S-Cam brake self-energizing behavior"
+            >
+            <figcaption>
+                Self-energizing behavior
+            </figcaption>
+        </figure>
+
+    </div>
+
+</div>
 
     <!-- ENGINEERING APPROACH -->
 
@@ -788,7 +880,7 @@
         </span>
 
         <a
-            href="https://github.com/cassiobelo"
+            href="https://github.com/cassiobelo/OptiBF"
             target="_blank"
             rel="noopener noreferrer"
         >
