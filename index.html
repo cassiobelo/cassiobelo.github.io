@@ -73,16 +73,34 @@
 
         /* HERO */
 
-        .hero {
-            min-height: 650px;
-            display: flex;
-            align-items: center;
-            border-bottom: 1px solid #222a33;
-        }
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #222a33;
+}
 
-        .hero-content {
-            max-width: 850px;
-        }
+.hero-content {
+    max-width: 850px;
+    flex: 1;
+}
+
+.hero-layout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.hero-photo {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #3a4652;
+    flex-shrink: 0;
+}
 
         .eyebrow {
             color: #7fb3ff;
@@ -231,6 +249,15 @@
     background: #0b0f14;
 }
 
+.optibf-main-image img {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.optibf-secondary-images img {
+    max-width: 100%;
+}
+
 .optibf-gallery figcaption {
     margin-top: 10px;
     color: #8b96a5;
@@ -260,6 +287,20 @@
 
     .optibf-secondary-images {
         grid-template-columns: 1fr;
+    }
+
+    .hero-layout {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 850px;
+    }
+
+    .hero-photo {
+        width: 180px;
+        height: 180px;
     }
 
 }
@@ -590,48 +631,61 @@
 <!-- HERO -->
 
 <header class="hero">
-    <div class="container hero-content">
 
-        <div class="eyebrow">
-            Mechanical & Vehicle Engineer
+    <div class="container hero-layout">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                Mechanical & Vehicle Engineer
+            </div>
+
+            <h1>
+                Engineering<br>
+                vehicles that perform.
+            </h1>
+
+            <h2>
+                Automotive Product Engineering · FEA · Structural Analysis · Brake Systems
+            </h2>
+
+            <p class="hero-description">
+                Mechanical engineer with experience in commercial vehicle product
+                development, structural analysis, finite element analysis,
+                brake systems, validation and manufacturing.
+            </p>
+
+            <div class="buttons">
+
+                <a class="button primary" href="#projects">
+                    View Selected Projects
+                </a>
+
+                <a class="button"
+                   href="https://www.linkedin.com/in/cassiod esouza/"
+                   target="_blank">
+                    LinkedIn
+                </a>
+
+                <a class="button"
+                   href="https://github.com/cassiobelo"
+                   target="_blank">
+                    GitHub
+                </a>
+
+            </div>
+
         </div>
 
-        <h1>
-            Engineering<br>
-            vehicles that perform.
-        </h1>
-
-        <h2>
-            Automotive Product Engineering · FEA · Structural Analysis · Brake Systems
-        </h2>
-
-        <p class="hero-description">
-            Mechanical engineer with experience in commercial vehicle product
-            development, structural analysis, finite element analysis,
-            brake systems, validation and manufacturing.
-        </p>
-
-        <div class="buttons">
-            <a class="button primary" href="#projects">
-                View Selected Projects
-            </a>
-
-            <a class="button"
-               href="https://www.linkedin.com/in/cassiodesouza/"
-               target="_blank">
-                LinkedIn
-            </a>
-
-            <a class="button"
-               href="https://github.com/cassiobelo"
-               target="_blank">
-                GitHub
-            </a>
-        </div>
+        <img
+            src="images/profile/cassio-profile.png"
+            alt="Cassio Souza"
+            class="hero-photo"
+        >
 
     </div>
-</header>
 
+</header>
 
 <!-- PROJECTS -->
 
