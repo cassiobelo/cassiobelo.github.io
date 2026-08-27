@@ -242,36 +242,40 @@
 }
 
 .optibf-gallery img {
-    width: 100%;
     display: block;
     border-radius: 8px;
     border: 1px solid #29323c;
     background: #0b0f14;
 }
 
+.optibf-main-image {
+    margin-bottom: 35px !important;
+}
+
 .optibf-main-image img {
-    max-width: 700px;
+    width: 300px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
+.optibf-secondary-images {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
 .optibf-secondary-images img {
-    max-width: 100%;
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
 }
 
 .optibf-gallery figcaption {
     margin-top: 10px;
     color: #8b96a5;
     font-size: 13px;
-}
-
-.optibf-main-image {
-    margin-bottom: 24px !important;
-}
-
-.optibf-secondary-images {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
 }
 
 .optibf-gallery img {
@@ -287,6 +291,11 @@
 
     .optibf-secondary-images {
         grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+
+    .optibf-secondary-images img {
+        height: auto;
     }
 
     .hero-layout {
